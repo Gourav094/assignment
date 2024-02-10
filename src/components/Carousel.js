@@ -2,7 +2,7 @@ import React from 'react'
 import IMG_carousel from '../assets/img1.png'
 const Carousel = () => {
     return (
-        <div className='relative w-[350px] mx-4 overflow-hidden rounded-2xl shadow-lg bg-gray-100'>
+        <div className='relative md:w-[350px] mx-4 overflow-hidden rounded-2xl shadow-lg bg-gray-100'>
             <img className='rounded-2xl ' src={IMG_carousel} alt='loading..' />
             <div className='absolute top-4 left-4'>
                 <button className='text-gray-900 bg-white px-2 py-1 rounded-lg'>
@@ -10,7 +10,7 @@ const Carousel = () => {
                     Bestseller
                 </button>
             </div>
-            <div className='top-[45%] inset-x-0 absolute'>
+            <div className='top-[45%] inset-x-0 absolute hidden md:inline-block'>
                 <div className='left-6 absolute inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-200 '><i className='fa-solid fa-chevron-left text-gray-700'></i></div>
                 <div className='right-6 absolute inline-flex items-center justify-center rounded-full h-8 w-8 bg-gray-200 '><i className='fa-solid fa-chevron-right text-gray-700'></i></div>
             </div>

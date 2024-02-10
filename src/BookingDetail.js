@@ -1,28 +1,35 @@
 import React from 'react'
+import Summary from './components/Summary'
 
 const BookingDetail = () => {
     return (
-        <div className='w-3/5 text-gray-500'>
-            <h1 className='text-6xl font-medium pb-6 text-gray-900'>Confirm & pay</h1>
-            <div className='text-sm flex justify-between px-6 border rounded-xl py-4 bg-gray-50 my-10'>
+        <div className='md:w-3/5 text-gray-500'>
+            <h1 className='text-4xl md:text-6xl font-medium pb-6 text-gray-900'>Confirm & pay</h1>
+            <div className='md:hidden'>
+                <Summary/>
+            </div>
+            <div className='text-sm flex justify-between px-6 border rounded-xl py-4 bg-gray-50 my-6 md:my-10'>
                 <div>
                     <h1 className='font-semibold text-gray-900 '>Free cancellation</h1>
                     <p>Tickets can be cancelled by 13th December, 2022.</p>
                 </div>
                 <i className="fa-solid fa-circle-info text-xs"></i>
             </div>
+            <div className='border-b md:border-none mb-2'></div>
             <div className='py-6'>
                 <h1 className='font-semibold pb-4 text-2xl text-gray-900'>Enter your details</h1>
                 <p className='pb-12'>We'll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
-                <div className=''>
+                <div className=''>    
                     <input className='w-full border outline-none rounded-2xl p-4' type='text' placeholder='Full name' />
-                    <div className='py-8 flex gap-6'>
-                        <input className='border outline-none rounded-2xl p-4 w-1/2' type='text' placeholder='Country code' />
-                        <input className='border outline-none rounded-2xl p-4 w-1/2' type='text' placeholder='Phone number' />
+                    
+                    <div className='py-8 flex flex-col md:flex-row gap-6'>
+                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Country code' />
+                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Phone number' />
                     </div>
-                    <div className='pb-8 border-b flex gap-6'>
-                        <input className='border outline-none rounded-2xl p-4 w-1/2' type='text' placeholder='Email' />
-                        <input className='border outline-none rounded-2xl p-4 w-1/2' type='text' placeholder='Confirm Email' />
+                    
+                    <div className='pb-8 border-b flex flex-col md:flex-row gap-6'>
+                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Email' />
+                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Confirm Email' />
                     </div>
                 </div>
             </div>
@@ -30,9 +37,9 @@ const BookingDetail = () => {
                 <h1 className='pb-2 font-semibold text-gray-900 text-2xl'>Additional information</h1>
                 <p className='py-2'>We need a few more details to complete your reservation.</p>
                 <div className='py-1'>
-                    <div className='py-6 flex gap-4'>
-                        <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='Input label' type='text' />
-                        <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='Select' type='text' />
+                    <div className='py-6 flex flex-col md:flex-row gap-4'>
+                        <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Input label' type='text' />
+                        <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Select' type='text' />
                     </div>
                     <input className='outline-none mb-2 p-4 rounded-lg border w-full' placeholder='Multiselect' type='text' />
                 </div>
@@ -78,23 +85,26 @@ const BookingDetail = () => {
                         </div>
 
                         <div className='border-b'>
-                            <div className='py-6 flex gap-4'>
-                                <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='Name on card' type='text' />
-                                <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='Card number' type='text' />
+                            <div className='py-6 flex flex-col md:flex-row gap-4'>
+                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Name on card' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Card number' type='text' />
                             </div>
-                            <div className='pb-8 flex gap-4'>
-                                <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='Expiry date' type='text' />
-                                <input className='outline-none p-4 w-1/2 border rounded-lg' placeholder='<CVV/CVC>' type='text' />
+                            <div className='pb-8 flex flex-col md:flex-row gap-4'>
+                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Expiry date' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='<CVV/CVC>' type='text' />
                             </div>
                         </div>
                         <div>
                             <div className='py-4'>
-                                <div className='flex justify-between'>
-                                    <div className='items-center flex gap-2 text-lg font-semibold text-gray-900 pb-1'>
+                                <div className='md:flex justify-between items-center'>
+                                    <button className='px-2 md:hidden rounded-full text-sm bg-green-700 bg-opacity-90 text-green-50'>
+                                        <i className="fa-solid fa-piggy-bank pr-1"></i>
+                                        {'You save <price>'}</button>
+                                    <div className='items-center flex gap-2 text-lg font-semibold text-gray-900 py-1'>
                                         <h1 className=''>Total payable:</h1>
                                         <h1>$XXX</h1>
                                     </div>
-                                    <button className='px-2  rounded-full text-sm bg-green-700 text-green-50'>
+                                    <button className='px-2 md:inline hidden rounded-full text-sm bg-green-700 bg-opacity-90 text-green-50'>
                                         <i className="fa-solid fa-piggy-bank pr-1"></i>
                                         {'You save <price>'}</button>
                                 </div>
@@ -103,10 +113,10 @@ const BookingDetail = () => {
                                     <i className="fa-solid fa-circle-info text-xs "></i>
                                 </div>
                             </div>
-                            <div className='py-4'>
+                            <div className='py-4 text-xs pr-2'>
                                 <span>By clicking “confirm & pay”, you agree to <span className='text-blue-700 underline'>Tickete’s general terms  and conditions</span> and <span className='text-blue-700 underline'>cancellation policy </span>.</span>
                             </div>
-                            <button className='px-8 py-4 text-white text-lg font-semibold rounded-2xl bg-black'>
+                            <button className='w-full   md:w-fit px-8 py-4 text-white text-lg font-semibold rounded-2xl bg-black'>
                                 <i className="fa-solid fa-lock pr-3"></i>
                                 Confirm & pay</button>
                         </div>
@@ -132,6 +142,10 @@ const BookingDetail = () => {
                     <div className='border mb-6'></div>
                     <div>
                         <div className='py-4 font-semibold text-2xl text-gray-900'>
+                            <button className='px-2 my-3 rounded-full text-sm bg-green-100 border text-green-500 opacity-80 font-semibold md:hidden'>
+                                <i className="fa-solid fa-piggy-bank pr-1 text-xs"></i>
+                                {'You save <price>'}
+                            </button>
                             <p>Total Payable: $XXX</p>
                         </div>
                         <div className='text-gray-900 text-sm flex gap-2 p-4     border rounded-2xl'>

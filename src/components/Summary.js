@@ -3,7 +3,7 @@ import Carousel from './Carousel'
 
 const Summary = () => {
     return (
-        <div className='w-96 border-2 rounded-3xl h-fit overflow-hidden'>
+        <div className='w-96 border-2 rounded-3xl h-fit overflow-hidden pb-6'>
             <div>
                 <div className=' py-4'>
                     <Carousel/>
@@ -64,7 +64,7 @@ const Summary = () => {
                         <i className="fa-solid fa-circle-info"></i>
                     </div>
                 </div>
-                <div className='py-6'>
+                <div className='pt-6 hidden md:inline-block'>
                     <div className='pb-4 text-sm text-gray-500'>
                         <span>By clicking “confirm & pay”, you agree to <span className='text-blue-700 underline'>Tickete’s general terms  and conditions</span> and <span className='text-blue-700 underline'>cancellation policy </span>.</span>
                     </div>
