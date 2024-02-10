@@ -3,12 +3,12 @@ import Summary from './components/Summary'
 
 const BookingDetail = () => {
     return (
-        <div className='md:w-3/5 text-gray-500'>
+        <div className='md:w-3/5 text-gray-500 '>
             <h1 className='text-4xl md:text-6xl font-medium pb-6 text-gray-900'>Confirm & pay</h1>
             <div className='md:hidden'>
                 <Summary/>
             </div>
-            <div className='text-sm flex justify-between px-6 border rounded-xl py-4 bg-gray-50 my-6 md:my-10'>
+            <div className='text-sm flex justify-between px-6 border border-gray-300 rounded-xl py-4 bg-gray-50 my-6 md:my-10'>
                 <div>
                     <h1 className='font-semibold text-gray-900 '>Free cancellation</h1>
                     <p>Tickets can be cancelled by 13th December, 2022.</p>
@@ -20,16 +20,16 @@ const BookingDetail = () => {
                 <h1 className='font-semibold pb-4 text-2xl text-gray-900'>Enter your details</h1>
                 <p className='pb-12'>We'll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
                 <div className=''>    
-                    <input className='w-full border outline-none rounded-2xl p-4' type='text' placeholder='Full name' />
+                    <input className='w-full border border-gray-300 outline-none rounded-2xl p-4' type='text' placeholder='Full name' />
                     
                     <div className='py-8 flex flex-col md:flex-row gap-6'>
-                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Country code' />
-                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Phone number' />
+                        <input className='border border-gray-300 outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Country code' />
+                        <input className='border border-gray-300 outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Phone number' />
                     </div>
                     
-                    <div className='pb-8 border-b flex flex-col md:flex-row gap-6'>
-                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Email' />
-                        <input className='border outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Confirm Email' />
+                    <div className='pb-8 border-b border-gray-300 flex flex-col md:flex-row gap-6'>
+                        <input className='border border-gray-300 outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Email' />
+                        <input className='border border-gray-300 outline-none rounded-2xl p-4 md:w-1/2' type='text' placeholder='Confirm Email' />
                     </div>
                 </div>
             </div>
@@ -38,10 +38,10 @@ const BookingDetail = () => {
                 <p className='py-2'>We need a few more details to complete your reservation.</p>
                 <div className='py-1'>
                     <div className='py-6 flex flex-col md:flex-row gap-4'>
-                        <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Input label' type='text' />
-                        <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Select' type='text' />
+                        <input className='outline-none p-4 md:w-1/2 border border-gray-300 rounded-lg' placeholder='Input label' type='text' />
+                        <input className='outline-none p-4 md:w-1/2 border border-gray-300 rounded-lg' placeholder='Select' type='text' />
                     </div>
-                    <input className='outline-none mb-2 p-4 rounded-lg border w-full' placeholder='Multiselect' type='text' />
+                    <input className='outline-none mb-2 p-4 rounded-lg border border-gray-300 w-full' placeholder='Multiselect' type='text' />
                 </div>
             </div>
             <div className='py-8'>
@@ -84,14 +84,14 @@ const BookingDetail = () => {
                             </div>
                         </div>
 
-                        <div className='border-b'>
+                        <div className='border-b border-gray-300'>
                             <div className='py-6 flex flex-col md:flex-row gap-4'>
-                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Name on card' type='text' />
-                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Card number' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border-gray-300 border rounded-lg' placeholder='Name on card' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border-gray-300 border rounded-lg' placeholder='Card number' type='text' />
                             </div>
                             <div className='pb-8 flex flex-col md:flex-row gap-4'>
-                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='Expiry date' type='text' />
-                                <input className='outline-none p-4 md:w-1/2 border rounded-lg' placeholder='<CVV/CVC>' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border-gray-300 border rounded-lg' placeholder='Expiry date' type='text' />
+                                <input className='outline-none p-4 md:w-1/2 border-gray-300 border rounded-lg' placeholder='<CVV/CVC>' type='text' />
                             </div>
                         </div>
                         <div>
@@ -121,7 +121,7 @@ const BookingDetail = () => {
                                 Confirm & pay</button>
                         </div>
                     </div>
-                    <div className='flex justify-between items-center bg-gray-50 border rounded-xl p-4 my-6'>
+                    <div className='flex justify-between items-center bg-gray-50 border-gray-300 border rounded-xl p-4 my-6'>
                         <div className='flex gap-4 items-center'>
                             <i className="fa-brands fa-apple-pay bg-gray-300 px-1 rounded"></i>
                             <p className='font-semibold text-gray-400'>Coming soon</p>
@@ -130,7 +130,7 @@ const BookingDetail = () => {
 
                         </div>
                     </div>
-                    <div className='flex justify-between items-center bg-gray-50 border rounded-xl p-4 my-6'>
+                    <div className='flex justify-between items-center bg-gray-50 border-gray-300 border rounded-xl p-4 my-6'>
                         <div className='flex gap-4 items-center'>
                             <i className="fa-brands fa-google-pay bg-gray-300 px-1 rounded"></i>
                             <p className='font-semibold text-gray-400'>Coming soon</p>
@@ -148,7 +148,7 @@ const BookingDetail = () => {
                             </button>
                             <p>Total Payable: $XXX</p>
                         </div>
-                        <div className='text-gray-900 text-sm flex gap-2 p-4     border rounded-2xl'>
+                        <div className='text-gray-900 text-sm flex gap-2 p-4 border-gray-300 border rounded-2xl'>
                             <i className="fa-solid fa-circle-info text-xs pt-1"></i>
                             <div>
                                 <p>You will be charged in AED</p>

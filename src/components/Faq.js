@@ -2,7 +2,7 @@ import React from 'react'
 import CHAT_IMG from '../assets/chat-with-us.png'
 const Faq = () => {
     return (
-        <div className='py-14 px-3 md:px-[12%] text-gray-900'>
+        <div className='py-14 px-3 md:pl-[12%] md:pr-[6%] text-gray-900 '>
             <div className='md:flex gap-20'>
                 <div className='md:w-2/5'>
                     <div>
@@ -18,26 +18,26 @@ const Faq = () => {
                     </div>
                 </div>
                 <div className='md:w-3/5'>
-                    <div className='text-gray-900 font-semibold flex gap-6 items-center border rounded-xl py-4 px-4 md:px-8'>
+                    <div className='text-gray-900 font-semibold flex gap-6 items-center border border-gray-300 rounded-xl py-4 px-4 md:px-8'>
                         <i className="fa-solid fa-plus text-gray-500"></i>
                         <p>What should I do on my first trip to Rome?</p>
                     </div>
-                    <div className='my-6 text-gray-900 font-semibold flex gap-6 border rounded-xl py-4 px-4 md:px-8'>
+                    <div className='my-6 text-gray-900 font-semibold flex gap-6 border border-gray-300 rounded-xl py-4 px-4 md:px-8'>
                         <i className="fa-solid fa-xmark text-gray-500 pt-2"></i>
                         <div>
                             <p>What are some hidden gems to see in Rome?</p>
                             <p className='text-gray-400 text-sm py-3 px-1 '>Rome is packed with hidden gems. If you love art, don't miss the Galleria Doria Pamphilj or Palazzo Barberini. The Museo Barracco is a free museum and well worth a quick visit. If you love the ancient stuff, don't miss the Domus Romana at Palazzo Valentini, the Domus Aurea, and the Baths of Caracalla. For even more hidden gems, take a tour of Trastevere, a fascinating neighborhood full of history and ambiance.</p>
                         </div>
                     </div>
-                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border rounded-xl py-4 px-4 md:px-8'>
+                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border border-gray-300 rounded-xl py-4 px-4 md:px-8'>
                         <i className="fa-solid fa-plus text-gray-500"></i>
                         <p>How much time should I spend in Rome?</p>
                     </div>
-                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border rounded-xl py-4 px-4 md:px-8'>
+                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border border-gray-300 rounded-xl py-4 px-4 md:px-8'>
                         <i className="fa-solid fa-plus text-gray-500"></i>
                         <p>What food is Rome known for?</p>
                     </div>
-                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border rounded-xl py-4 px-4 md:px-8'>
+                    <div className='my-6 text-gray-900 font-semibold flex gap-6 items-center border border-gray-300 rounded-xl py-4 px-4 md:px-8'>
                         <i className="fa-solid fa-plus text-gray-500"></i>
                         <p>What is the best way to get around Rome?</p>
                     </div>
@@ -52,7 +52,7 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <div className='border mt-4'></div>
+            <div className='border mt-4 mr-[6%]'></div>
 
         </div>
     )

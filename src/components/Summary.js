@@ -10,8 +10,8 @@ const Summary = () => {
                 </div>
                 <div className='px-4'>
                     <div>
-                        <div className='text-sm flex gap-2 text-gray-500'>
-                            <i className="fa-regular fa-star-half-stroke -rotate-90 text-red-400"></i>
+                        <div className='text-sm flex items-center gap-2 text-gray-500'>
+                            <i className="fa-regular fa-star-half-stroke -rotate-[72deg] text-red-400"></i>
                             <p className='text-gray-900'>4.9</p>
                             <p>(4.5k)</p>
                             <p>•</p>
@@ -34,7 +34,7 @@ const Summary = () => {
                         <div className='flex gap-4 py-2'>
                             <i className="fa-solid fa-clock pt-2"></i>
                             <div>
-                                <p>{'<ticket type - variant>'}</p>
+                                <p>{'<time>'}</p>
                                 <p className='text-gray-500 text-xs py-1 font-normal'>{'Operating hours: <time> to <time>'}</p>
                             </div>
                         </div>
